@@ -55,21 +55,27 @@
   </header>
 
   <section class="hero" id="hero">
-    <!-- Contenuto -->
-    <div class="gradient-circle"></div>
-    <h1>Creo esperienze web uniche</h1>
-    <div class="hero-buttons">
-      
-      <button class="button" id="goProjects"> 
-        <div class="bubble-layer bubble-1"></div> 
-        <div class="bubble-layer bubble-2"></div> 
-        <div class="bubble-layer bubble-3"></div> 
-        <div class="bubble-layer bubble-4"></div> 
-        <div class="bubble-layer bubble-5"></div> 
-        <div class="bubble-layer bubble-6"></div> 
-        <div class="bubble-layer bubble-7"></div> 
-        <span>I miei progetti</span> 
-      </button>
+    <img class="hero-mm-gif" src="mm.gif" alt="MM" decoding="async">
+    <a class="scroll-indicator" href="#curvedLoop" aria-label="Scorri per vedere il contenuto">
+      <span class="scroll-indicator__mouse" aria-hidden="true">
+        <span class="scroll-indicator__dot" aria-hidden="true"></span>
+      </span>
+    </a>
+  </section>
+
+  <section class="curved-loop-section" aria-label="Curved Loop">
+    <div class="curved-loop-jacket" id="curvedLoop" data-text="Natural ✦ Wehea ✦ Archi del Duca ✦ Caseificio Chiatante ✦ La dimora di nonna Dora ✦ We Engineering ✦ ">
+      <svg class="curved-loop-svg" viewBox="0 0 1440 120" role="img" aria-label="Testo curvo animato">
+        <text class="curved-loop-measure" xmlSpace="preserve">
+          Natural&nbsp;
+        </text>
+        <defs>
+          <path id="curvedLoopPath" d="M-100,40 Q500,100 1540,40" fill="none" stroke="transparent"></path>
+        </defs>
+        <text font-weight="700" xmlSpace="preserve" class="curved-loop-text">
+          <textPath href="#curvedLoopPath" startOffset="0px" xmlSpace="preserve"></textPath>
+        </text>
+      </svg>
     </div>
   </section>
 
@@ -84,15 +90,31 @@
     <div class="container">
       <h2>I miei progetti</h2>
       <div class="grid">
+        <a href="https://weheacreativestudio.com" target="_blank" class="project-link">
+          <div class="outer"> 
+            <div class="dot"></div> 
+            <div class="card"> 
+              <div class="ray"></div> 
+              <div class="img-container">
+                <img src="wehea.png" alt="Wehea Creative Studio" class="card-img">
+              </div>
+              <div class="text"><h3>Wehea Creative Studio</h3></div> 
+              <div class="line topl"></div> 
+              <div class="line leftl"></div> 
+              <div class="line bottoml"></div> 
+              <div class="line rightl"></div> 
+            </div> 
+          </div>
+        </a>
         <a href="https://www.naturalismnatural.com" target="_blank" class="project-link">
           <div class="outer"> 
             <div class="dot"></div> 
             <div class="card"> 
               <div class="ray"></div> 
               <div class="img-container">
-                <img src="natural.png" alt="Natural" class="card-img">
+                <img src="natural.png" alt="Naturalism Natural" class="card-img">
               </div>
-              <div class="text"><h3>Natural</h3></div> 
+              <div class="text"><h3>Naturalism Natural</h3></div> 
               <div class="line topl"></div> 
               <div class="line leftl"></div> 
               <div class="line bottoml"></div> 
@@ -106,25 +128,9 @@
             <div class="card"> 
               <div class="ray"></div> 
               <div class="img-container">
-                <img src="archidelduca.jpg" alt="Archi del Duca" class="card-img">
+                <img src="archidelduca.png" alt="Archi del Duca" class="card-img">
               </div>
               <div class="text"><h3>Archi del Duca</h3></div> 
-              <div class="line topl"></div> 
-              <div class="line leftl"></div> 
-              <div class="line bottoml"></div> 
-              <div class="line rightl"></div> 
-            </div> 
-          </div>
-        </a>
-        <a href="https://www.caseificiochiatante.it" target="_blank" class="project-link">
-          <div class="outer"> 
-            <div class="dot"></div> 
-            <div class="card"> 
-              <div class="ray"></div> 
-              <div class="img-container">
-                <img src="chiatante.jpg" alt="Caseificio Chiatante" class="card-img">
-              </div>
-              <div class="text"><h3>Caseificio Chiatante</h3></div> 
               <div class="line topl"></div> 
               <div class="line leftl"></div> 
               <div class="line bottoml"></div> 
@@ -138,7 +144,7 @@
             <div class="card"> 
               <div class="ray"></div> 
               <div class="img-container">
-                <img src="nonna.jpg" alt="La Dimora di Nonna Dora" class="card-img">
+                <img src="ladimora.png" alt="La Dimora di Nonna Dora" class="card-img">
               </div>
               <div class="text"><h3>La Dimora di Nonna Dora</h3></div> 
               <div class="line topl"></div> 
@@ -148,13 +154,13 @@
             </div> 
           </div>
         </a>
-        <a href="https://www.weengineering.it" target="_blank" class="project-link">
+        <a href="https://weengineering.it" target="_blank" class="project-link">
           <div class="outer"> 
             <div class="dot"></div> 
             <div class="card"> 
               <div class="ray"></div> 
               <div class="img-container">
-                <img src="weengi.jpg" alt="We Engineering" class="card-img">
+                <img src="weengineering.png" alt="We Engineering" class="card-img">
               </div>
               <div class="text"><h3>We Engineering</h3></div> 
               <div class="line topl"></div> 
@@ -164,16 +170,48 @@
             </div> 
           </div>
         </a>
-       
-        <a href="https://www.quellidellalba.com" target="_blank" class="project-link">
+        <a href="https://chiatantecaseificio.it" target="_blank" class="project-link">
           <div class="outer"> 
             <div class="dot"></div> 
             <div class="card"> 
               <div class="ray"></div> 
               <div class="img-container">
-                <img src="QDA.jpg" alt="Quelli dell'Alba" class="card-img">
+                <img src="chiatante.png" alt="Caseificio Chiatante" class="card-img">
+              </div>
+              <div class="text"><h3>Caseificio Chiatante</h3></div> 
+              <div class="line topl"></div> 
+              <div class="line leftl"></div> 
+              <div class="line bottoml"></div> 
+              <div class="line rightl"></div> 
+            </div> 
+          </div>
+        </a>
+       
+        <a href="https://quellidellalba.com" target="_blank" class="project-link">
+          <div class="outer"> 
+            <div class="dot"></div> 
+            <div class="card"> 
+              <div class="ray"></div> 
+              <div class="img-container">
+                <img src="quellidellalba.png" alt="Quelli dell'Alba" class="card-img">
               </div>
               <div class="text"><h3>Quelli dell'Alba</h3></div> 
+              <div class="line topl"></div> 
+              <div class="line leftl"></div> 
+              <div class="line bottoml"></div> 
+              <div class="line rightl"></div> 
+            </div> 
+          </div>
+        </a>
+        <a href="https://jokerpizza.it" target="_blank" class="project-link">
+          <div class="outer"> 
+            <div class="dot"></div> 
+            <div class="card"> 
+              <div class="ray"></div> 
+              <div class="img-container">
+                <img src="jokerpizza.png" alt="Joker Pizza" class="card-img">
+              </div>
+              <div class="text"><h3>Joker Pizza</h3></div> 
               <div class="line topl"></div> 
               <div class="line leftl"></div> 
               <div class="line bottoml"></div> 
@@ -243,10 +281,17 @@
 
   <footer class="footer">
       <p>info@matteomarino.cloud |  <a href="cookies.html">Cookies Policy</a></p>
-      <p>&copy; 2025 matteomarino.cloud . Tutti i diritti riservati.</p>
+      <p>&copy; 2026 matteomarino.cloud . Tutti i diritti riservati.</p>
       <p>Web by Matteo Marino </p>
   
   </footer>
+
+  <a class="floating-social floating-social--instagram" href="https://www.instagram.com/_matteomarino/" target="_blank" rel="noopener noreferrer" aria-label="Apri Instagram @_matteomarino">
+    <svg class="floating-social__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+      <path d="M12 7.3A4.7 4.7 0 1 0 16.7 12 4.71 4.71 0 0 0 12 7.3Zm0 7.7A3 3 0 1 1 15 12a3 3 0 0 1-3 3ZM17.5 6.9a1.1 1.1 0 1 1-1.1-1.1 1.1 1.1 0 0 1 1.1 1.1Z"/>
+      <path d="M16.9 2H7.1A5.1 5.1 0 0 0 2 7.1v9.8A5.1 5.1 0 0 0 7.1 22h9.8A5.1 5.1 0 0 0 22 16.9V7.1A5.1 5.1 0 0 0 16.9 2Zm3.4 14.9a3.4 3.4 0 0 1-3.4 3.4H7.1a3.4 3.4 0 0 1-3.4-3.4V7.1a3.4 3.4 0 0 1 3.4-3.4h9.8a3.4 3.4 0 0 1 3.4 3.4Z"/>
+    </svg>
+  </a>
 
   <script src="script.js"></script>
 </body>
