@@ -185,13 +185,22 @@ body.light .slider {
 /* fix iOS viewport */
 @supports (height: 100svh){ .hero{ min-height:100svh; } }
 
+.hero-mm-gif-wrap{
+  background:#000;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 18px 55px rgba(0,0,0,.55);
+  line-height: 0;
+}
+
 .hero-mm-gif{
   width: min(520px, 76vw);
   height: auto;
   max-height: 52vh;
   object-fit: contain;
-  position: relative;
-  z-index: 2;
+  display:block;
   filter: drop-shadow(0 18px 55px rgba(0,0,0,.6));
   user-select: none;
   -webkit-user-select: none;
