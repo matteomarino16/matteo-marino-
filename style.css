@@ -760,7 +760,7 @@ h2{text-align:center;margin:0 0 28px}
 
 .reveal-item{
   opacity:0;
-  transform: translateY(22px) scale(.985);
+  transform: translateX(var(--reveal-x, 0px)) translateY(10px);
   transition: opacity 650ms ease, transform 650ms ease;
   transition-delay: var(--reveal-delay, 0ms);
   will-change: opacity, transform;
@@ -768,7 +768,15 @@ h2{text-align:center;margin:0 0 28px}
 
 .reveal-item.is-visible{
   opacity:1;
-  transform: translateY(0);
+  transform: translateX(0) translateY(0);
+}
+
+#projects .project-link.reveal-item:nth-child(odd){
+  --reveal-x: -44px;
+}
+
+#projects .project-link.reveal-item:nth-child(even){
+  --reveal-x: 44px;
 }
 
 .projects-header {
@@ -1284,8 +1292,8 @@ body.light .footer-bottom {
 }
 
 .outer:hover .card{
-  transform: rotateX(6deg) rotateY(-10deg) translateZ(14px);
-  box-shadow: 0 26px 70px rgba(0,0,0,.65);
+  transform: translateY(-6px);
+  box-shadow: 0 24px 60px rgba(0,0,0,.60);
 }
 
 .ray { 
@@ -1323,8 +1331,8 @@ body.light .footer-bottom {
 }
 
 .outer:hover .card-img {
-  opacity: 0.9;
-  transform: scale(1.05);
+  opacity: 0.85;
+  transform: none;
 }
 
 .card .text { 
@@ -1415,6 +1423,14 @@ body.light .sponsor-container{
 
   .grid {
     gap: 14px;
+  }
+
+  #projects .project-link.reveal-item:nth-child(odd){
+    --reveal-x: -26px;
+  }
+
+  #projects .project-link.reveal-item:nth-child(even){
+    --reveal-x: 26px;
   }
 
   .outer {
