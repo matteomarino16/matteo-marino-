@@ -205,3 +205,55 @@ if (projectsButton) {
 
   window.addEventListener('beforeunload', () => cancelAnimationFrame(frame));
 })();
+
+// Lazy Load Video
+(() => {
+  if (!('IntersectionObserver' in window)) return;
+
+  const lazyVideos = document.querySelectorAll('video.lazy-video');
+  const videoObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((video) => {
+      if (video.isIntersecting) {
+        const v = video.target;
+        // Se c'è un data-src, caricalo
+        if (v.dataset.src) {
+          v.src = v.dataset.src;
+          v.load();
+          v.play().catch(e => console.log('Autoplay prevented:', e));
+          v.classList.remove('lazy-video');
+          observer.unobserve(v);
+        }
+      }
+    });
+  }, { rootMargin: '200px' }); // Carica un po' prima che entri nel viewport
+
+  lazyVideos.forEach((v) => {
+    videoObserver.observe(v);
+  });
+})();
+
+// 3D Tilt Effect for MagicUI Safari
+(() => {
+  const cards = document.querySelectorAll('.magicui-safari');
+  
+  cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      const centerX = rect.width / 2;
+      const centerY = rect.height / 2;
+      
+      // Calculate rotation (max 10 degrees)
+      const rotateX = ((y - centerY) / centerY) * -10; 
+      const rotateY = ((x - centerX) / centerX) * 10;
+      
+      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
+    });
+    
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+    });
+  });
+})();
