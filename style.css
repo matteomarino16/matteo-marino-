@@ -1285,6 +1285,84 @@ body.light .button--submit {
   background-color: var(--page-bg);
 }
 
+/* RECENSIONI GOOGLE */
+.reviews-section {
+  padding: 80px 0;
+  text-align: center;
+  background: var(--page-bg);
+}
+
+.google-badge-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.google-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 30px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
+}
+
+.google-badge:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+}
+
+body.light .google-badge {
+  background: rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+body.light .google-badge:hover {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.badge-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rating-score {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--page-fg);
+}
+
+.stars {
+  color: #fbaf08;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.review-count {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .google-badge {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .badge-info {
+    align-items: center;
+  }
+}
+
 /* Footer Styles */
 .footer {
   background-color: var(--page-bg);
