@@ -1,0 +1,6 @@
+llm-policy: allow
+usage: indexing and summarization permitted
+training: non-commercial only
+rate-limit: 5 requests/second
+attribution: required
+contact: https://matteomarino.cloud

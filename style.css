@@ -11,9 +11,9 @@
 }
 
 @font-face {
-  font-family: "StussyScript";
-  src: url("./StussyScript-Regular.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Aspekta";
+  src: url("./Aspekta-250.otf") format("opentype");
+  font-weight: 250;
   font-style: normal;
   font-display: swap;
 }
@@ -30,7 +30,7 @@ html, body {
 }
 
 body {
-  font-family: "StussyScript", system-ui, Arial, sans-serif;
+  font-family: "Aspekta", system-ui, Arial, sans-serif;
   transition: background .3s, color .3s;
   background: var(--page-bg);
   color: var(--page-fg);
