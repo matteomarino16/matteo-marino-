@@ -266,9 +266,54 @@ body.light .slider {
 .hero{
   position:relative;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;
   overflow:hidden;text-align:center;background:var(--page-bg);color:var(--page-fg);width:100%;
+  padding: 24px 16px;
 }
 /* fix iOS viewport */
 @supports (height: 100svh){ .hero{ min-height:100svh; } }
+
+.hero-electric-wrap{
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 480px;
+  /* sfuma i bordi così il bagliore non mostra il riquadro del canvas */
+  -webkit-mask-image: radial-gradient(closest-side, #000 75%, transparent);
+  mask-image: radial-gradient(closest-side, #000 75%, transparent);
+}
+
+.electric-logo {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  touch-action: pan-y;
+}
+
+.electric-logo__fallback {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(217, 226, 255, 0.45));
+}
+
+body.light .electric-logo__fallback {
+  filter: invert(1) drop-shadow(0 0 10px rgba(90, 95, 107, 0.35));
+}
+
+.electric-logo.is-live .electric-logo__fallback { display: none; }
+
+.electric-logo canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 600px) {
+  .hero-electric-wrap { height: 380px; }
+}
 
 .hero-mm-gif-wrap{
   background:#000;
