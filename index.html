@@ -3,57 +3,560 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <script type="importmap">
-    {
-      "imports": {
-        "ogl": "https://cdn.jsdelivr.net/npm/ogl@1.0.11/+esm"
-      }
-    }
-  </script>
   
-  <!-- SEO Base -->
-  <title>Matteo Marino </title>
-   <!-- Matteomarino.eu -->
-  <meta name="description" content="Matteo Marino, sviluppatore web.  Creo esperienze web uniche.">
-  <meta name="keywords" content="matteo marino, sviluppatore web, web developer, designer, siti web, portfolio, javascript, html, css, web design">
-  
+  <!-- SEO -->
+  <title>Matteo Marino | Web Designer e Sviluppatore Web in Italia</title>
+  <meta name="description" content="Matteo Marino, web designer e sviluppatore web: siti vetrina, landing page, e-commerce, app mobile e SEO per aziende e professionisti in tutta Italia. Guarda i progetti e richiedi un preventivo.">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://matteomarino.eu/">
+  <link rel="alternate" hreflang="it" href="https://matteomarino.eu/">
+  <link rel="alternate" hreflang="x-default" href="https://matteomarino.eu/">
+  <meta name="theme-color" content="#000000">
+  <meta name="format-detection" content="telephone=no">
+
   <!-- Open Graph (Facebook / WhatsApp / LinkedIn) -->
-  <meta property="og:title" content="Matteo Marino - Sviluppatore Web & Designer">
-  <meta property="og:description" content="Matteo Marino, sviluppatore web e designer. Creo esperienze web uniche con tecnologie moderne e design innovativo.">
-  <meta property="og:image" content="https://matteomarino.eu/favicon.ico">
-  <meta property="og:url" content="https://matteomarino.eu">
   <meta property="og:type" content="website">
-  
-  <!-- Twitter Card -->
+  <meta property="og:locale" content="it_IT">
+  <meta property="og:site_name" content="Matteo Marino">
+  <meta property="og:title" content="Matteo Marino | Web Designer e Sviluppatore Web">
+  <meta property="og:description" content="Siti vetrina, landing page, e-commerce, app mobile e SEO in tutta Italia. Guarda i progetti realizzati.">
+  <meta property="og:url" content="https://matteomarino.eu/">
+  <meta property="og:image" content="https://matteomarino.eu/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo MM di Matteo Marino, web designer e sviluppatore web">
+
+  <!-- Twitter / X -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Matteo Marino - Sviluppatore Web ">
-  <meta name="twitter:description" content="Matteo Marino, sviluppatore web. Creo esperienze web uniche.">
-  <meta name="twitter:image" content="https://matteomarino.eu/favicon.ico">
-  
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  
-  <link rel="stylesheet" href="./style.css?v=3" />
+  <meta name="twitter:title" content="Matteo Marino | Web Designer e Sviluppatore Web">
+  <meta name="twitter:description" content="Siti vetrina, landing page, e-commerce, app mobile e SEO in tutta Italia.">
+  <meta name="twitter:image" content="https://matteomarino.eu/og-image.jpg">
+  <meta name="twitter:image:alt" content="Logo MM di Matteo Marino, web designer e sviluppatore web">
+
+  <!-- Icone -->
+  <link rel="icon" href="favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- Per i motori AI (GEO) -->
+  <link rel="alternate" type="text/markdown" href="llms.txt" title="llms.txt">
+
+  <!-- Velocità: precarica l'immagine statica del logo -->
+  <link rel="preload" href="logo-mask.png" as="image">
+
+  <link rel="stylesheet" href="./style.css?v=14" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "name": "Matteo Marino",
-        "url": "https://matteomarino.cloud",
-        "inLanguage": "it-IT",
-        "description": "Matteo Marino, sviluppatore web e designer. Creo esperienze web uniche con tecnologie moderne e design innovativo."
-      },
-      {
-        "@type": "Person",
-        "name": "Matteo Marino",
-        "jobTitle": "Sviluppatore Web & Designer",
-        "url": "https://matteomarino.cloud"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://matteomarino.eu/#website",
+      "url": "https://matteomarino.eu/",
+      "name": "Matteo Marino",
+      "alternateName": "Matteo Marino Web Designer",
+      "inLanguage": "it-IT",
+      "description": "Portfolio di Matteo Marino, web designer e sviluppatore web: siti vetrina, landing page, e-commerce, app mobile e SEO in tutta Italia.",
+      "publisher": {
+        "@id": "https://matteomarino.eu/#person"
       }
-    ]
-  }
+    },
+    {
+      "@type": "Person",
+      "@id": "https://matteomarino.eu/#person",
+      "name": "Matteo Marino",
+      "jobTitle": "Web Designer e Sviluppatore Web",
+      "url": "https://matteomarino.eu/",
+      "image": "https://matteomarino.eu/icons/icon-512.png",
+      "email": "mailto:info@matteomarino.eu",
+      "telephone": "+39 392 124 7095",
+      "nationality": {
+        "@type": "Country",
+        "name": "Italia"
+      },
+      "knowsLanguage": [
+        "it"
+      ],
+      "knowsAbout": [
+        "Web design",
+        "Sviluppo web",
+        "Siti web vetrina",
+        "Landing page",
+        "E-commerce",
+        "App mobile",
+        "SEO",
+        "Generative Engine Optimization",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Figma",
+        "WebGL",
+        "Swift",
+        "SwiftUI",
+        "Sviluppo app iOS"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/_matteomarino/"
+      ],
+      "worksFor": {
+        "@id": "https://matteomarino.eu/#business"
+      }
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://matteomarino.eu/#business",
+      "name": "Matteo Marino – Web Designer",
+      "url": "https://matteomarino.eu/",
+      "logo": "https://matteomarino.eu/icons/icon-512.png",
+      "image": "https://matteomarino.eu/og-image.jpg",
+      "description": "Progettazione e sviluppo di siti web vetrina, landing page, e-commerce, app mobile e ottimizzazione SEO per aziende e professionisti in tutta Italia.",
+      "email": "info@matteomarino.eu",
+      "telephone": "+39 392 124 7095",
+      "founder": {
+        "@id": "https://matteomarino.eu/#person"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Italia"
+      },
+      "availableLanguage": [
+        "it"
+      ],
+      "knowsAbout": [
+        "Web design",
+        "Sviluppo web",
+        "E-commerce",
+        "SEO"
+      ],
+      "sameAs": [
+        "https://www.instagram.com/_matteomarino/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer service",
+        "email": "info@matteomarino.eu",
+        "telephone": "+39 392 124 7095",
+        "areaServed": "IT",
+        "availableLanguage": [
+          "Italian"
+        ]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi web",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Siti Web Vetrina",
+              "description": "Presenza online professionale ed elegante, ottimizzata per ogni dispositivo.",
+              "serviceType": "Siti Web Vetrina",
+              "provider": {
+                "@id": "https://matteomarino.eu/#person"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Italia"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Landing Page",
+              "description": "Pagine singole ad alto tasso di conversione per campagne marketing.",
+              "serviceType": "Landing Page",
+              "provider": {
+                "@id": "https://matteomarino.eu/#person"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Italia"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "E-commerce",
+              "description": "Soluzioni complete per la vendita online, sicure e facili da gestire.",
+              "serviceType": "E-commerce",
+              "provider": {
+                "@id": "https://matteomarino.eu/#person"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Italia"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "App Mobile",
+              "description": "Applicazioni native e cross-platform per iOS e Android ad alte prestazioni.",
+              "serviceType": "App Mobile",
+              "provider": {
+                "@id": "https://matteomarino.eu/#person"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Italia"
+              }
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "SEO",
+              "description": "Ottimizzazione per i motori di ricerca e per le risposte dei motori AI.",
+              "serviceType": "SEO",
+              "provider": {
+                "@id": "https://matteomarino.eu/#person"
+              },
+              "areaServed": {
+                "@type": "Country",
+                "name": "Italia"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://matteomarino.eu/#webpage",
+      "url": "https://matteomarino.eu/",
+      "name": "Matteo Marino | Web Designer e Sviluppatore Web in Italia",
+      "isPartOf": {
+        "@id": "https://matteomarino.eu/#website"
+      },
+      "about": {
+        "@id": "https://matteomarino.eu/#person"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://matteomarino.eu/og-image.jpg",
+        "width": 1200,
+        "height": 630
+      },
+      "inLanguage": "it-IT",
+      "dateModified": "2026-10-03",
+      "mainEntity": {
+        "@id": "https://matteomarino.eu/#portfolio"
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://matteomarino.eu/#portfolio",
+      "name": "Portfolio: siti web realizzati da Matteo Marino",
+      "numberOfItems": 17,
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Naturalism Natural",
+            "url": "https://www.naturalismnatural.com",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Wehea Creative Studio",
+            "url": "https://weheacreativestudio.com",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Bolla diciassette",
+            "url": "https://bolladiciassette.com",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web 12district",
+            "url": "https://12district.com",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Iorbaldo 1934",
+            "url": "https://iorbaldo.it",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Sportsvillage",
+            "url": "https://sportsvillage.it",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Archi del Duca",
+            "url": "https://www.archidelduca.it",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Tenuta Odegitria",
+            "url": "https://tenutaodegitria.it",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Como Intelvi Lodges",
+            "url": "https://comointelvilodges.it",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web La Dimora di Nonna Dora",
+            "url": "https://ladimoradinonnadora.com",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 11,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Gaspare Richichi",
+            "url": "https://gasparerichichi.com",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 12,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web We Engineering",
+            "url": "https://weengineering.it",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 13,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Caseificio Chiatante",
+            "url": "https://caseificiochiatante.it",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 14,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web AperiFrutta",
+            "url": "https://aperifrutta.com",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 15,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Joker Pizza",
+            "url": "https://jokerpizza.it",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web Quelli dell'Alba",
+            "url": "https://quellidellalba.com",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
+          "item": {
+            "@type": "CreativeWork",
+            "name": "Sito web DS Society",
+            "url": "https://dssociety.it",
+            "creator": {
+              "@id": "https://matteomarino.eu/#person"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://matteomarino.eu/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Chi è Matteo Marino?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Matteo Marino è un web designer e sviluppatore web italiano. Progetta e realizza siti vetrina, landing page, e-commerce e app mobile per aziende e professionisti, curando design, sviluppo e SEO."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quali servizi offri?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Realizzo siti web vetrina, landing page per campagne marketing, e-commerce, app mobile per iOS e Android e ottimizzazione SEO, inclusa l'ottimizzazione per i motori di ricerca basati sull'intelligenza artificiale."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Lavori in tutta Italia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Lavoro da remoto con clienti in tutta Italia: progettazione, revisioni e consegna si gestiscono online, via email, WhatsApp o telefono."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto costa un sito web?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Il costo dipende dal tipo di progetto, dal numero di pagine e dalle funzionalità richieste. Compila il modulo di richiesta progetto o scrivi a info@matteomarino.eu per ricevere un preventivo su misura."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "I siti che realizzi sono ottimizzati per smartphone e per Google?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sì. Ogni sito è progettato per funzionare su tutti i dispositivi ed è impostato fin dall'inizio per la SEO: struttura dei contenuti, velocità, dati strutturati e meta tag."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Come posso contattarti?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Puoi scrivere a info@matteomarino.eu, contattarmi su WhatsApp o per telefono al +39 392 124 7095, oppure compilare il modulo di richiesta progetto su questo sito."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://matteomarino.eu/#finger-roulette",
+      "name": "Finger Roulette",
+      "operatingSystem": "iOS",
+      "applicationCategory": "GameApplication",
+      "description": "Gioco multiplayer locale per iPhone: fino a 6 persone appoggiano un dito sullo schermo, parte il countdown e l'app sceglie qualcuno. Quattro modalità (scelta casuale, eliminazione, al meglio di 3, decisione), funziona offline e senza permessi.",
+      "image": "https://matteomarino.eu/foto%20app/finger-roulette-icona.jpg",
+      "screenshot": [
+        "https://matteomarino.eu/foto%20app/finger-roulette-home.jpg",
+        "https://matteomarino.eu/foto%20app/finger-roulette-partita.jpg"
+      ],
+      "inLanguage": "it",
+      "author": {
+        "@id": "https://matteomarino.eu/#person"
+      },
+      "url": "https://matteomarino.eu/finger-roulette.html"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://matteomarino.eu/#gestify",
+      "name": "Gestify",
+      "operatingSystem": "iOS",
+      "applicationCategory": "FinanceApplication",
+      "description": "App per iPhone per gestire le finanze personali: più portafogli, entrate e spese per categoria, analisi con grafici e confronto con il mese precedente.",
+      "screenshot": [
+        "https://matteomarino.eu/foto%20app/gestify-home.jpg",
+        "https://matteomarino.eu/foto%20app/gestify-analisi.jpg"
+      ],
+      "inLanguage": "it",
+      "author": {
+        "@id": "https://matteomarino.eu/#person"
+      },
+      "url": "https://matteomarino.eu/gestify.html",
+      "image": "https://matteomarino.eu/foto%20app/gestify-icona.png"
+    }
+  ]
+}
   </script>
 </head>
 <body class="dark">
@@ -83,8 +586,9 @@
   </header>
 
   <section class="hero" id="hero">
+    <h1 class="sr-only">Matteo Marino – Web Designer e Sviluppatore Web in Italia</h1>
     <div class="hero-electric-wrap">
-      <div class="electric-logo" id="electricLogo" data-src="./logo-mask.png" role="img" aria-label="Logo Matteo Marino">
+      <div class="electric-logo" id="electricLogo" role="img" aria-label="Logo Matteo Marino">
         <img class="electric-logo__fallback" src="logo-mask.png" alt="" aria-hidden="true" decoding="async">
       </div>
     </div>
@@ -114,50 +618,56 @@
   <section class="empty-section">
     <div class="sponsor-container">
       <p class="sponsor-text">Inserisci la tua sponsorizzazione</p>
-      <p class="sponsor-contact">Scrivi a <a href="mailto:info@matteomarino.eu">info@matteomarino.cloud</a></p>
+      <p class="sponsor-contact">Scrivi a <a href="mailto:info@matteomarino.eu">info@matteomarino.eu</a></p>
     </div>
   </section>
 
-  <section class="services-section">
+  <section class="services-section" id="servizi" aria-labelledby="servicesTitle">
     <div class="container">
-      <h2 class="section-title">I MIEI SERVIZI</h2>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
+      <h2 class="section-title" id="servicesTitle">I MIEI SERVIZI</h2>
+      <p class="services-lead">Dal design allo sviluppo: tutto quello che serve alla tua attività per crescere online.</p>
+      <ol class="services-list">
+        <li class="service-row">
+          <span class="service-row__num">01</span>
+          <h3 class="service-row__title">Siti Web Vetrina</h3>
+          <div class="service-row__body">
+            <p>Un sito professionale ed elegante che presenta la tua attività e ti fa trovare su Google, perfetto su ogni dispositivo.</p>
+            <ul class="service-row__tags"><li>Design su misura</li><li>Responsive</li><li>SEO di base</li></ul>
           </div>
-          <h3>Siti Web Vetrina</h3>
-          <p>Presenza online professionale ed elegante, ottimizzata per ogni dispositivo.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><line x1="3" x2="21" y1="9" y2="9"/><line x1="9" x2="9" y1="21" y2="9"/></svg>
+        </li>
+        <li class="service-row">
+          <span class="service-row__num">02</span>
+          <h3 class="service-row__title">Landing Page</h3>
+          <div class="service-row__body">
+            <p>Pagine singole pensate per convertire: ideali per lanciare un prodotto o sostenere le tue campagne marketing.</p>
+            <ul class="service-row__tags"><li>Alta conversione</li><li>Veloci</li><li>Pronte per le campagne</li></ul>
           </div>
-          <h3>Landing Page</h3>
-          <p>Pagine singole ad alto tasso di conversione per le tue campagne marketing.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg>
+        </li>
+        <li class="service-row">
+          <span class="service-row__num">03</span>
+          <h3 class="service-row__title">E-commerce</h3>
+          <div class="service-row__body">
+            <p>Il tuo negozio online completo, sicuro e facile da gestire, per vendere i tuoi prodotti ogni giorno.</p>
+            <ul class="service-row__tags"><li>Catalogo prodotti</li><li>Pagamenti sicuri</li><li>Gestione semplice</li></ul>
           </div>
-          <h3>E-commerce</h3>
-          <p>Soluzioni complete per la vendita online, sicure e facili da gestire.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+        </li>
+        <li class="service-row">
+          <span class="service-row__num">04</span>
+          <h3 class="service-row__title">App Mobile</h3>
+          <div class="service-row__body">
+            <p>Applicazioni per iPhone e Android ad alte prestazioni, dal design allo sviluppo.</p>
+            <ul class="service-row__tags"><li>iOS</li><li>Android</li><li>Design nativo</li></ul>
           </div>
-          <h3>App Mobile</h3>
-          <p>Applicazioni native e cross-platform per iOS e Android ad alte prestazioni.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+        </li>
+        <li class="service-row">
+          <span class="service-row__num">05</span>
+          <h3 class="service-row__title">SEO</h3>
+          <div class="service-row__body">
+            <p>Ottimizzazione per farti trovare su Google e nelle risposte dei motori di intelligenza artificiale.</p>
+            <ul class="service-row__tags"><li>Google</li><li>Motori AI</li><li>Dati strutturati</li></ul>
           </div>
-          <h3>SEO</h3>
-          <p>Ottimizzazione per i motori di ricerca per scalare le vette di Google.</p>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </section>
 
@@ -166,7 +676,7 @@
       <h2>I miei progetti</h2>
       <div class="grid">
         <!-- Naturalism Natural -->
-        <a href="https://www.naturalismnatural.com" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://www.naturalismnatural.com" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -179,13 +689,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/natural.jpg" alt="Naturalism Natural" class="safari-img" loading="lazy">
+              <img src="siti%20foto/natural.jpg" alt="Sito web Naturalism Natural realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
         <!-- Wehea Creative Studio -->
-        <a href="https://weheacreativestudio.com" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://weheacreativestudio.com" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -198,13 +708,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <video data-src="video/wehea.mov" poster="siti%20foto/wehea.png" muted loop playsinline class="safari-img lazy-video"></video>
+              <video data-src="video/wehea-720.mp4" aria-label="Anteprima del sito web Wehea Creative Studio realizzato da Matteo Marino" poster="siti%20foto/wehea.jpg" muted loop playsinline class="safari-img lazy-video"></video>
             </div>
           </div>
         </a>
 
         <!-- Bolla diciassette -->
-        <a href="https://bolladiciassette.com" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://bolladiciassette.com" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -217,13 +727,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/bolla.png" alt="Bolla diciassette" class="safari-img" loading="lazy">
+              <img src="siti%20foto/bolla.png" alt="Sito web Bolla diciassette realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
         <!-- 12district -->
-        <a href="https://12district.com" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://12district.com" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -236,12 +746,12 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/12district.png" alt="12district" class="safari-img" loading="lazy">
+              <img src="siti%20foto/12district.png" alt="Sito web 12district realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
-        <a href="https://iorbaldo.it" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://iorbaldo.it" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -254,12 +764,12 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/iorbaldo1934.png" alt="Iorbaldo" class="safari-img" loading="lazy">
+              <img src="siti%20foto/iorbaldo1934.png" alt="Sito web Iorbaldo 1934 realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
-        <a href="https://sportsvillage.it" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://sportsvillage.it" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -272,13 +782,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/Sportsvillage.png" alt="Sportsvillage" class="safari-img" loading="lazy">
+              <img src="siti%20foto/Sportsvillage.png" alt="Sito web Sportsvillage realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
         <!-- Archi del Duca -->
-        <a href="https://www.archidelduca.it" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://www.archidelduca.it" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -291,13 +801,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/archidelduca.jpg" alt="Archi del Duca" class="safari-img" loading="lazy">
+              <img src="siti%20foto/archidelduca.jpg" alt="Sito web Archi del Duca realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
         <!-- Tenuta Odegitria -->
-        <a href="https://tenutaodegitria.it" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://tenutaodegitria.it" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -310,13 +820,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/tenutaodegitria.png" alt="Tenuta Odegitria" class="safari-img" loading="lazy" style="object-fit: cover; object-position: top;">
+              <img src="siti%20foto/tenutaodegitria.png" alt="Sito web Tenuta Odegitria realizzato da Matteo Marino" class="safari-img" loading="lazy" style="object-fit: cover; object-position: top;">
             </div>
           </div>
         </a>
 
         <!-- Como Intelvi Lodges -->
-        <a href="https://comointelvilodges.it" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://comointelvilodges.it" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -329,13 +839,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <video data-src="video/comointelvi.mov" muted loop playsinline class="safari-img lazy-video"></video>
+              <video data-src="video/comointelvi.mov" aria-label="Anteprima del sito web Como Intelvi Lodges realizzato da Matteo Marino" poster="siti%20foto/comointelvi.jpg" muted loop playsinline class="safari-img lazy-video"></video>
             </div>
           </div>
         </a>
 
         <!-- La Dimora di Nonna Dora -->
-        <a href="https://ladimoradinonnadora.com" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://ladimoradinonnadora.com" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -348,13 +858,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/ladimora.jpg" alt="La Dimora di Nonna Dora" class="safari-img" loading="lazy">
+              <img src="siti%20foto/ladimora.jpg" alt="Sito web La Dimora di Nonna Dora realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
         <!-- Gaspare Richichi -->
-        <a href="https://gasparerichichi.com" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://gasparerichichi.com" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -367,13 +877,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/gasparerichichi.jpg" alt="Gaspare Richichi" class="safari-img" loading="lazy" style="object-fit: cover; object-position: top;">
+              <img src="siti%20foto/gasparerichichi.jpg" alt="Sito web Gaspare Richichi realizzato da Matteo Marino" class="safari-img" loading="lazy" style="object-fit: cover; object-position: top;">
             </div>
           </div>
         </a>
 
         <!-- We Engineering -->
-        <a href="https://weengineering.it" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://weengineering.it" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -386,13 +896,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/weengineering.jpg" alt="We Engineering" class="safari-img" loading="lazy">
+              <img src="siti%20foto/weengineering.jpg" alt="Sito web We Engineering realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
         <!-- Caseificio Chiatante -->
-        <a href="https://caseificiochiatante.it" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://caseificiochiatante.it" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -405,14 +915,14 @@
               </div>
             </div>
             <div class="safari-content">
-              <video data-src="video/caseificiochiatante.mov" muted loop playsinline class="safari-img lazy-video"></video>
+              <video data-src="video/caseificiochiatante.mov" aria-label="Anteprima del sito web Caseificio Chiatante realizzato da Matteo Marino" poster="siti%20foto/caseificiochiatante.jpg" muted loop playsinline class="safari-img lazy-video"></video>
             </div>
           </div>
         </a>
 
 
         <!-- AperiFrutta -->
-        <a href="https://aperifrutta.com" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://aperifrutta.com" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -425,13 +935,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/aperifrutta.png" alt="AperiFrutta" class="safari-img" loading="lazy" style="object-fit: cover; object-position: top;">
+              <img src="siti%20foto/aperifrutta.png" alt="Sito web AperiFrutta realizzato da Matteo Marino" class="safari-img" loading="lazy" style="object-fit: cover; object-position: top;">
             </div>
           </div>
         </a>
 
         <!-- Joker Pizza -->
-        <a href="https://jokerpizza.it" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://jokerpizza.it" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -444,13 +954,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/jokerpizza.jpg" alt="Joker Pizza" class="safari-img" loading="lazy">
+              <img src="siti%20foto/jokerpizza.jpg" alt="Sito web Joker Pizza realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
         <!-- Quelli dell'Alba -->
-        <a href="https://quellidellalba.com" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://quellidellalba.com" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -463,13 +973,13 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/quellidellalba.jpg" alt="Quelli dell'Alba" class="safari-img" loading="lazy">
+              <img src="siti%20foto/quellidellalba.jpg" alt="Sito web Quelli dell'Alba realizzato da Matteo Marino" class="safari-img" loading="lazy">
             </div>
           </div>
         </a>
 
         <!-- DS Society -->
-        <a href="https://dssociety.it" target="_blank" class="project-link" style="text-decoration: none;">
+        <a href="https://dssociety.it" target="_blank" rel="noopener" class="project-link" style="text-decoration: none;">
           <div class="safari-window">
             <div class="safari-header">
               <div class="safari-buttons">
@@ -482,9 +992,90 @@
               </div>
             </div>
             <div class="safari-content">
-              <img src="siti%20foto/dssociety.png" alt="DS Society" class="safari-img" loading="lazy" style="object-fit: cover; object-position: top;">
+              <img src="siti%20foto/dssociety.png" alt="Sito web DS Society realizzato da Matteo Marino" class="safari-img" loading="lazy" style="object-fit: cover; object-position: top;">
             </div>
           </div>
+        </a>
+      </div>
+      <div class="wa-cta-wrap">
+        <a class="wa-cta" href="https://wa.me/393921247095?text=Ciao%20Matteo%2C%20ho%20visto%20i%20tuoi%20progetti%20sul%20sito%20e%20vorrei%20richiedere%20un%20preventivo%20per%20il%20mio%20sito%20web." target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Richiedi il tuo progetto</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="apps-section" id="app" aria-labelledby="appsTitle">
+    <div class="container">
+      <h2 class="section-title" id="appsTitle">LE MIE APP</h2>
+      <p class="apps-intro">App per iPhone progettate e sviluppate da me in SwiftUI.</p>
+
+      <article class="app-showcase">
+        <div class="app-info">
+          <div class="app-head">
+            <img class="app-icon" src="foto%20app/finger-roulette-icona.jpg" alt="Icona dell'app Finger Roulette" width="64" height="64" loading="lazy">
+            <div>
+              <h3 class="app-name">Finger Roulette</h3>
+              <p class="app-category">Gioco · iPhone</p>
+            </div>
+          </div>
+          <p class="app-desc">Fino a 6 persone appoggiano un dito sullo schermo, parte il countdown e l'app sceglie qualcuno. Perfetta per decidere chi paga, chi guida o chi inizia.</p>
+          <ul class="app-features">
+            <li>4 modalità: scelta casuale, eliminazione, al meglio di 3, decisione</li>
+            <li>Vibrazioni e suoni sincronizzati con il countdown</li>
+            <li>Statistiche delle partite</li>
+            <li>Funziona offline, senza permessi</li>
+          </ul>
+          <div class="app-actions">
+          <button type="button" class="store-btn" data-store-soon aria-label="Download now su App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+            <span class="store-btn__text"><span class="store-btn__small">Download now</span><span class="store-btn__big">App Store</span></span>
+            <span class="store-btn__soon" aria-live="polite">Prossimamente</span>
+          </button>
+          <a class="more-btn" href="finger-roulette.html">Scopri di più <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="app-phones">
+          <figure class="app-phone"><img src="foto%20app/finger-roulette-home.jpg" alt="Schermata iniziale dell'app Finger Roulette" width="603" height="1311" loading="lazy"></figure>
+          <figure class="app-phone"><img src="foto%20app/finger-roulette-partita.jpg" alt="Finger Roulette: risultato della partita con il giocatore scelto" width="603" height="1311" loading="lazy"></figure>
+        </div>
+      </article>
+
+      <article class="app-showcase app-showcase--reverse">
+        <div class="app-info">
+          <div class="app-head">
+            <img class="app-icon" src="foto%20app/gestify-icona.png" alt="Icona dell'app Gestify" width="64" height="64" loading="lazy">
+            <div>
+              <h3 class="app-name">Gestify</h3>
+              <p class="app-category">Finanza personale · iPhone</p>
+            </div>
+          </div>
+          <p class="app-desc">Gestisci entrate e spese in modo semplice: tutti i tuoi conti in un'unica app, con il saldo sempre aggiornato e grafici chiari per capire dove vanno i soldi.</p>
+          <ul class="app-features">
+            <li>Più portafogli: personale, contanti, risparmi, vacanze</li>
+            <li>Movimenti divisi per categoria, con filtri</li>
+            <li>Analisi con grafici: 7 giorni, mese, trimestre, anno</li>
+            <li>Confronto con il mese precedente</li>
+          </ul>
+          <div class="app-actions">
+          <button type="button" class="store-btn" data-store-soon aria-label="Download now su App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+            <span class="store-btn__text"><span class="store-btn__small">Download now</span><span class="store-btn__big">App Store</span></span>
+            <span class="store-btn__soon" aria-live="polite">Prossimamente</span>
+          </button>
+          <a class="more-btn" href="gestify.html">Scopri di più <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="app-phones">
+          <figure class="app-phone"><img src="foto%20app/gestify-home.jpg" alt="Schermata home dell'app Gestify con saldo totale e portafogli" width="603" height="1311" loading="lazy"></figure>
+          <figure class="app-phone"><img src="foto%20app/gestify-analisi.jpg" alt="Gestify: analisi delle spese per categoria con grafico a ciambella" width="603" height="1311" loading="lazy"></figure>
+        </div>
+      </article>
+      <div class="wa-cta-wrap">
+        <a class="wa-cta" href="https://wa.me/393921247095?text=Ciao%20Matteo%2C%20ho%20visto%20le%20tue%20app%20sul%20sito%20e%20vorrei%20richiedere%20un%20preventivo%20per%20un%27app." target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <span>Richiedi il tuo progetto</span>
         </a>
       </div>
     </div>
@@ -492,7 +1083,7 @@
 
   <section class="reviews-section">
     <div class="container">
-      <a href="https://share.google/SRN996mApbLPuOGqu" target="_blank" class="google-badge-link">
+      <a href="https://share.google/SRN996mApbLPuOGqu" target="_blank" rel="noopener noreferrer" class="google-badge-link">
         <div class="google-badge">
           <div class="google-logo">
             <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.66l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 12-4.53z" fill="#EA4335"/></svg>
@@ -550,21 +1141,63 @@
     </div>
   </section>
 
-  <section class="request-section">
+  <section class="faq-section" id="faq" aria-labelledby="faqTitle">
+    <div class="container">
+      <h2 class="section-title" id="faqTitle">DOMANDE FREQUENTI</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Chi è Matteo Marino?</summary>
+          <p>Matteo Marino è un web designer e sviluppatore web italiano. Progetta e realizza siti vetrina, landing page, e-commerce e app mobile per aziende e professionisti, curando design, sviluppo e SEO.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Quali servizi offri?</summary>
+          <p>Realizzo siti web vetrina, landing page per campagne marketing, e-commerce, app mobile per iOS e Android e ottimizzazione SEO, inclusa l&#x27;ottimizzazione per i motori di ricerca basati sull&#x27;intelligenza artificiale.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Lavori in tutta Italia?</summary>
+          <p>Sì. Lavoro da remoto con clienti in tutta Italia: progettazione, revisioni e consegna si gestiscono online, via email, WhatsApp o telefono.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Quanto costa un sito web?</summary>
+          <p>Il costo dipende dal tipo di progetto, dal numero di pagine e dalle funzionalità richieste. Compila il modulo di richiesta progetto o scrivi a info@matteomarino.eu per ricevere un preventivo su misura.</p>
+        </details>
+        <details class="faq-item">
+          <summary>I siti che realizzi sono ottimizzati per smartphone e per Google?</summary>
+          <p>Sì. Ogni sito è progettato per funzionare su tutti i dispositivi ed è impostato fin dall&#x27;inizio per la SEO: struttura dei contenuti, velocità, dati strutturati e meta tag.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Come posso contattarti?</summary>
+          <p>Puoi scrivere a info@matteomarino.eu, contattarmi su WhatsApp o per telefono al +39 392 124 7095, oppure compilare il modulo di richiesta progetto su questo sito.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="request-section" id="contatti">
     <div class="container">
       <div class="request-button-container">
         <h2 class="section-title">NEWSLETTER</h2>
         <form action="https://formspree.io/f/mjgebdlv" method="POST" class="form">
           <div class="input-group"> 
-            <input type="email" class="input" id="Email" name="Email" placeholder="Enter your email here*" autocomplete="off" required> 
-            <input class="button--submit" value="SUBMIT" type="submit"> 
+            <input type="email" class="input" id="Email" name="Email" placeholder="La tua email*" autocomplete="off" required> 
+            <input class="button--submit" value="ISCRIVITI" type="submit"> 
           </div>
         </form>
       </div>
 
+      <div class="demo-box" id="demo">
+        <h2 class="section-title">RICHIEDI LA TUA DEMO GRATUITA</h2>
+        <p class="demo-lead">Ti preparo un'anteprima gratuita del sito web per la tua attività, così vedi come potrebbe essere prima di decidere.</p>
+        <ul class="demo-points">
+          <li>Gratuita e senza impegno</li>
+          <li>Pensata su misura per la tua attività</li>
+          <li>Richiedila con il modulo qui sotto</li>
+        </ul>
+      </div>
+
       <div class="contact-box-container">
         <h2 class="section-title">RICHIESTA PROGETTO</h2>
-        <form action="https://formspree.io/f/mjgebdlv" method="POST" class="contact-form">
+        <form class="contact-form" data-whatsapp-form="progetto">
           <div class="form-row">
             <div class="form-group">
               <input type="text" name="Nome" placeholder="Nome*" required class="contact-input">
@@ -584,11 +1217,14 @@
           </div>
 
           <div class="form-group">
-            <select name="Tipo Progetto" required class="contact-input select-input">
+            <select name="Tipo di progetto" required class="contact-input select-input">
               <option value="" disabled selected>Tipo di progetto*</option>
+              <option value="Demo gratuita sito web">Demo gratuita sito web</option>
               <option value="Sito Web Vetrina">Sito Web Vetrina</option>
+              <option value="Landing Page">Landing Page</option>
               <option value="E-commerce">E-commerce</option>
               <option value="App Mobile">App Mobile</option>
+              <option value="SEO">SEO</option>
               <option value="Altro">Altro</option>
             </select>
           </div>
@@ -598,7 +1234,10 @@
           </div>
 
           <div class="form-submit">
-            <button type="submit" class="button--submit-full">INVIA RICHIESTA</button>
+            <button type="submit" class="wa-cta wa-cta--full">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              <span>Invia la richiesta su WhatsApp</span>
+            </button>
           </div>
         </form>
       </div>
@@ -619,39 +1258,42 @@
     </svg>
   </a>
 
-  <script src="script.js?v=1"></script>
-  <script type="module">
-    import { createElectricLogo } from './electric-logo.js?v=13';
+  <script src="script.js?v=6"></script>
+  <!-- effetto elettrico (bundle locale: funziona anche aprendo il file con doppio clic) -->
+  <script src="electric-logo.bundle.js?v=1"></script>
+  <script>
     (function initHeroElectricLogo() {
       const el = document.getElementById('electricLogo');
-      if (!el) return;
+      if (!el || !window.ElectricLogo) return;
+      const { createElectricLogo, mask } = window.ElectricLogo;
       const currentTheme = () => (document.body.classList.contains('light') ? 'light' : 'dark');
-      // stessi valori del componente ElectricLogo fornito
+      // bianco su sfondo scuro, grafite su sfondo chiaro
+      const palette = theme => (theme === 'light'
+        ? { theme, color: '#111111', glowColor: '#5a5f6b' }
+        : { theme, color: '#ffffff', glowColor: '#e8ecf5' });
       const logo = createElectricLogo(el, {
-        src: el.dataset.src,
-        color: '#ecc7ff',
-        glowColor: '#ad6dff',
+        src: mask, // immagine incorporata: niente blocchi del browser su file://
         scale: 0.7,
-        strands: 5,
-        bend: 0.8,
-        crackle: 2,
-        arcs: 2,
-        speed: 2.8,
+        strands: 3,
+        bend: 0.4,
+        crackle: 0.8,
+        arcs: 0.7,
+        speed: 2,
         interactive: true,
-        intensity: 1.05,
-        glow: 1,
-        thickness: 1.4,
-        flicker: 0.75,
+        intensity: 0.7,
+        glow: 0.6,
+        thickness: 1.6,
+        flicker: 0.4,
         fill: 0,
-        cursorIntensity: 1,
+        cursorIntensity: 0.75,
         cursorRadius: 100,
-        theme: currentTheme()
+        ...palette(currentTheme())
       });
       // senza WebGL2 l'effetto non parte: resta visibile la M statica
       if (typeof logo.set !== 'function') return;
       el.classList.add('is-live');
       // segue il toggle chiaro/scuro
-      new MutationObserver(() => logo.set({ theme: currentTheme() }))
+      new MutationObserver(() => logo.set(palette(currentTheme())))
         .observe(document.body, { attributes: true, attributeFilter: ['class'] });
     })();
   </script>

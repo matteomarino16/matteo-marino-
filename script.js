@@ -211,24 +211,44 @@ if (projectsButton) {
   if (!('IntersectionObserver' in window)) return;
 
   const lazyVideos = document.querySelectorAll('video.lazy-video');
-  const videoObserver = new IntersectionObserver((entries, observer) => {
-    entries.forEach((video) => {
-      if (video.isIntersecting) {
-        const v = video.target;
-        // Se c'è un data-src, caricalo
-        if (v.dataset.src) {
-          v.src = v.dataset.src;
-          v.load();
-          v.play().catch(e => console.log('Autoplay prevented:', e));
-          v.classList.remove('lazy-video');
-          observer.unobserve(v);
-        }
+
+  // Carica il video un po' prima che entri nel viewport
+  const loadVideo = (v) => {
+    if (!v.dataset.src) return;
+    v.src = v.dataset.src; // impostare src avvia già il caricamento
+    delete v.dataset.src;
+    v.classList.remove('lazy-video');
+  };
+
+  const loadObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      loadVideo(entry.target);
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: '200px' });
+
+  // Lo fa partire solo quando è visibile (Chrome mette in pausa i video fuori schermo)
+  const playObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const v = entry.target;
+      v.dataset.visible = entry.isIntersecting ? '1' : '';
+      if (entry.isIntersecting) {
+        loadVideo(v);
+        v.play().catch(() => {});
+      } else {
+        v.pause();
       }
     });
-  }, { rootMargin: '200px' }); // Carica un po' prima che entri nel viewport
+  }, { threshold: 0.25 });
 
   lazyVideos.forEach((v) => {
-    videoObserver.observe(v);
+    // se il primo play() è stato interrotto dal caricamento, riprova quando il video è pronto
+    v.addEventListener('canplay', () => {
+      if (v.dataset.visible && v.paused) v.play().catch(() => {});
+    });
+    loadObserver.observe(v);
+    playObserver.observe(v);
   });
 })();
 
@@ -254,6 +274,38 @@ if (projectsButton) {
     
     card.addEventListener('mouseleave', () => {
       card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
+    });
+  });
+})();
+
+// Pulsante App Store: le app non sono ancora pubblicate, mostra "Prossimamente"
+document.querySelectorAll('[data-store-soon]').forEach((btn) => {
+  btn.addEventListener('click', () => {
+    btn.classList.add('is-soon');
+    btn.setAttribute('aria-label', 'Prossimamente su App Store');
+  });
+});
+
+// Moduli "demo gratuita" e "richiesta progetto": aprono WhatsApp con il messaggio già scritto
+(() => {
+  const WHATSAPP = '393921247095';
+  const intro = {
+    demo: 'Ciao Matteo, vorrei richiedere la demo gratuita di un sito web per la mia attività.',
+    progetto: 'Ciao Matteo, vorrei richiedere un progetto.'
+  };
+
+  document.querySelectorAll('form[data-whatsapp-form]').forEach((form) => {
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const lines = [intro[form.dataset.whatsappForm] || intro.progetto, ''];
+      new FormData(form).forEach((value, key) => {
+        const text = String(value).trim();
+        if (text) lines.push(`${key}: ${text}`);
+      });
+      const url = `https://wa.me/${WHATSAPP}?text=${encodeURIComponent(lines.join('\n'))}`;
+      // nuova scheda se possibile, altrimenti nella stessa pagina (es. popup bloccati)
+      const win = window.open(url, '_blank', 'noopener');
+      if (!win) window.location.href = url;
     });
   });
 })();

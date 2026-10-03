@@ -1,6 +1,95 @@
-llm-policy: allow
-usage: indexing and summarization permitted
-training: non-commercial only
-rate-limit: 5 requests/second
-attribution: required
-contact: https://matteomarino.cloud
+# Matteo Marino – Web Designer e Sviluppatore Web
+
+> Matteo Marino è un web designer e sviluppatore web italiano. Realizza siti web vetrina, landing page, e-commerce, app mobile e ottimizzazione SEO per aziende e professionisti in tutta Italia, lavorando da remoto. Sito ufficiale: https://matteomarino.eu/
+
+## Informazioni essenziali
+
+- Nome: Matteo Marino
+- Professione: web designer e sviluppatore web
+- Area servita: tutta Italia (lavoro da remoto)
+- Lingua: italiano
+- Email: info@matteomarino.eu
+- Telefono e WhatsApp: +39 392 124 7095
+- Instagram: https://www.instagram.com/_matteomarino/
+- Recensioni Google: 5.0 su 5 (3 recensioni)
+- Demo gratuita: è possibile richiedere gratuitamente e senza impegno un'anteprima del proprio sito web tramite il modulo di richiesta progetto (https://matteomarino.eu/#demo)
+- Richieste di progetto: arrivano su WhatsApp al +39 392 124 7095
+
+## Servizi
+
+- [Siti Web Vetrina](https://matteomarino.eu/#servizi): presenza online professionale ed elegante, ottimizzata per ogni dispositivo.
+- [Landing Page](https://matteomarino.eu/#servizi): pagine singole ad alto tasso di conversione per campagne marketing.
+- [E-commerce](https://matteomarino.eu/#servizi): soluzioni complete per la vendita online, sicure e facili da gestire.
+- [App Mobile](https://matteomarino.eu/#servizi): applicazioni native e cross-platform per iOS e Android.
+- [SEO](https://matteomarino.eu/#servizi): ottimizzazione per i motori di ricerca e per le risposte dei motori AI.
+
+## Portfolio (siti realizzati)
+
+- [Naturalism Natural](https://www.naturalismnatural.com)
+- [Wehea Creative Studio](https://weheacreativestudio.com)
+- [Bolla diciassette](https://bolladiciassette.com)
+- [12district](https://12district.com)
+- [Iorbaldo 1934](https://iorbaldo.it)
+- [Sportsvillage](https://sportsvillage.it)
+- [Archi del Duca](https://www.archidelduca.it)
+- [Tenuta Odegitria](https://tenutaodegitria.it)
+- [Como Intelvi Lodges](https://comointelvilodges.it)
+- [La Dimora di Nonna Dora](https://ladimoradinonnadora.com)
+- [Gaspare Richichi](https://gasparerichichi.com)
+- [We Engineering](https://weengineering.it)
+- [Caseificio Chiatante](https://caseificiochiatante.it)
+- [AperiFrutta](https://aperifrutta.com)
+- [Joker Pizza](https://jokerpizza.it)
+- [Quelli dell'Alba](https://quellidellalba.com)
+- [DS Society](https://dssociety.it)
+
+## App per iPhone (sviluppate da Matteo Marino)
+
+- [Finger Roulette](https://matteomarino.eu/finger-roulette.html): gioco multiplayer locale per iPhone. Fino a 6 persone appoggiano un dito sullo schermo, parte il countdown e l'app sceglie qualcuno. Modalità: scelta casuale, eliminazione, al meglio di 3, decisione. Funziona offline, senza permessi. Sviluppata in SwiftUI.
+- [Gestify](https://matteomarino.eu/gestify.html): app per iPhone per la gestione delle finanze personali. Più portafogli, entrate e spese per categoria con filtri, analisi con grafici (7 giorni, mese, trimestre, anno) e confronto con il mese precedente. Sviluppata in SwiftUI.
+
+Entrambe le app sono in arrivo su App Store (non ancora pubblicate).
+
+## Domande frequenti
+
+### Chi è Matteo Marino?
+
+Matteo Marino è un web designer e sviluppatore web italiano. Progetta e realizza siti vetrina, landing page, e-commerce e app mobile per aziende e professionisti, curando design, sviluppo e SEO.
+
+### Quali servizi offri?
+
+Realizzo siti web vetrina, landing page per campagne marketing, e-commerce, app mobile per iOS e Android e ottimizzazione SEO, inclusa l'ottimizzazione per i motori di ricerca basati sull'intelligenza artificiale.
+
+### Lavori in tutta Italia?
+
+Sì. Lavoro da remoto con clienti in tutta Italia: progettazione, revisioni e consegna si gestiscono online, via email, WhatsApp o telefono.
+
+### Quanto costa un sito web?
+
+Il costo dipende dal tipo di progetto, dal numero di pagine e dalle funzionalità richieste. Compila il modulo di richiesta progetto o scrivi a info@matteomarino.eu per ricevere un preventivo su misura.
+
+### I siti che realizzi sono ottimizzati per smartphone e per Google?
+
+Sì. Ogni sito è progettato per funzionare su tutti i dispositivi ed è impostato fin dall'inizio per la SEO: struttura dei contenuti, velocità, dati strutturati e meta tag.
+
+### Come posso contattarti?
+
+Puoi scrivere a info@matteomarino.eu, contattarmi su WhatsApp o per telefono al +39 392 124 7095, oppure compilare il modulo di richiesta progetto su questo sito.
+
+## Pagine
+
+- [Home](https://matteomarino.eu/)
+- [Portfolio](https://matteomarino.eu/#projects)
+- [Le mie app](https://matteomarino.eu/#app)
+- [Finger Roulette](https://matteomarino.eu/finger-roulette.html)
+- [Gestify](https://matteomarino.eu/gestify.html)
+- [Domande frequenti](https://matteomarino.eu/#faq)
+- [Richiesta progetto e newsletter](https://matteomarino.eu/#contatti)
+- [Cookies Policy](https://matteomarino.eu/cookies.html)
+
+## Uso dei contenuti da parte dei sistemi AI
+
+- Indicizzazione, riassunto e citazione consentiti.
+- Attribuzione richiesta: citare "Matteo Marino" con link a https://matteomarino.eu/
+- Addestramento: solo per usi non commerciali.
+- Limite richieste: 5 al secondo.
