@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "esbuild electric-entry.js --bundle --format=iife --minify --loader:.png=dataurl --outfile=electric-logo.bundle.js"
+    "build": "esbuild src/electric-entry.js --bundle --format=iife --minify --loader:.png=dataurl --outfile=assets/js/electric-logo.bundle.js"
   },
   "dependencies": {
     "ogl": "^1.0.11"

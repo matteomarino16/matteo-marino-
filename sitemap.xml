@@ -7,73 +7,73 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://matteomarino.eu/og-image.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/og-image.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/natural.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/natural.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/wehea.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/wehea.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/bolla.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/bolla.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/12district.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/12district.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/iorbaldo1934.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/iorbaldo1934.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/Sportsvillage.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/Sportsvillage.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/archidelduca.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/archidelduca.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/tenutaodegitria.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/tenutaodegitria.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/comointelvi.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/comointelvi.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/ladimora.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/ladimora.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/gasparerichichi.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/gasparerichichi.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/weengineering.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/weengineering.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/caseificiochiatante.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/caseificiochiatante.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/aperifrutta.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/aperifrutta.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/jokerpizza.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/jokerpizza.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/quellidellalba.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/quellidellalba.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/dssociety.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/dssociety.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/siti%20foto/imcsrl.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/imcsrl.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/finger-roulette-home.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/finger-roulette-home.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/finger-roulette-partita.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/finger-roulette-partita.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/gestify-home.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/gestify-home.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/gestify-analisi.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/gestify-analisi.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -88,22 +88,22 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/finger-roulette-icona.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/finger-roulette-icona.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/finger-roulette-home.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/finger-roulette-home.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/finger-roulette-countdown.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/finger-roulette-countdown.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/finger-roulette-partita.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/finger-roulette-partita.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/finger-roulette-modalita.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/finger-roulette-modalita.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/finger-roulette-statistiche.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/finger-roulette-statistiche.jpg</image:loc>
     </image:image>
   </url>
   <url>
@@ -112,19 +112,19 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/gestify-icona.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/gestify-icona.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/gestify-home.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/gestify-home.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/gestify-transazioni.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/gestify-transazioni.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/gestify-portafogli.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/gestify-portafogli.jpg</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/foto%20app/gestify-analisi.jpg</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/app/gestify-analisi.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
