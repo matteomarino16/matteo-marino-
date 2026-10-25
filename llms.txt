@@ -25,6 +25,7 @@
 
 ## Portfolio (siti realizzati)
 
+- [SFM Distribuzioni – Vini d'eccellenza](https://sfmdistribuzioni.com)
 - [Naturalism Natural](https://www.naturalismnatural.com)
 - [Wehea Creative Studio](https://weheacreativestudio.com)
 - [Bolla diciassette](https://bolladiciassette.com)
@@ -34,7 +35,7 @@
 - [Archi del Duca](https://www.archidelduca.it)
 - [Tenuta Odegitria](https://tenutaodegitria.it)
 - [Como Intelvi Lodges](https://comointelvilodges.it)
-- [La Dimora di Nonna Dora](https://ladimoradinonnadora.com)
+- [La Dimora di Nonna Dora](https://ladimoradinonnadora.it)
 - [Gaspare Richichi](https://gasparerichichi.com)
 - [We Engineering](https://weengineering.it)
 - [Caseificio Chiatante](https://caseificiochiatante.it)
