@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://matteomarino.eu/</loc>
-    <lastmod>2026-10-13</lastmod>
+    <lastmod>2026-11-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -25,7 +25,7 @@
       <image:loc>https://matteomarino.eu/assets/img/siti/12district.png</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://matteomarino.eu/assets/img/siti/iorbaldo1934.png</image:loc>
+      <image:loc>https://matteomarino.eu/assets/img/siti/geensang.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://matteomarino.eu/assets/img/siti/Sportsvillage.png</image:loc>
@@ -53,9 +53,6 @@
     </image:image>
     <image:image>
       <image:loc>https://matteomarino.eu/assets/img/siti/aperifrutta.png</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://matteomarino.eu/assets/img/siti/jokerpizza.jpg</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://matteomarino.eu/assets/img/siti/quellidellalba.png</image:loc>

@@ -25,12 +25,11 @@
 
 ## Portfolio (siti realizzati)
 
-- [SFM Distribuzioni – Vini d'eccellenza](https://sfmdistribuzioni.com)
 - [Naturalism Natural](https://www.naturalismnatural.com)
 - [Wehea Creative Studio](https://weheacreativestudio.com)
 - [Bolla diciassette](https://bolladiciassette.com)
 - [12district](https://12district.com)
-- [Iorbaldo 1934](https://iorbaldo.it)
+- [Gianmarco Palazzo – fotografo e videomaker](https://geensang.com)
 - [Sportsvillage](https://sportsvillage.it)
 - [Archi del Duca](https://www.archidelduca.it)
 - [Tenuta Odegitria](https://tenutaodegitria.it)
@@ -40,10 +39,10 @@
 - [We Engineering](https://weengineering.it)
 - [Caseificio Chiatante](https://caseificiochiatante.it)
 - [AperiFrutta](https://aperifrutta.com)
-- [Joker Pizza](https://jokerpizza.it)
 - [Quelli dell'Alba](https://quellidellalba.it)
-- [DS Society](https://dssociety.it)
 - [IMC srl](https://imcsrl.eu)
+- [SFM Distribuzioni – Vini d'eccellenza](https://sfmdistribuzioni.com)
+- [DS Society](https://dssociety.it)
 
 ## App per iPhone (sviluppate da Matteo Marino)
 
