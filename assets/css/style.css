@@ -884,7 +884,7 @@ body.light .hero h1{ text-shadow: 0 0 10px rgba(255,255,255,0.25); }
 .projects{padding:72px 20px; position:relative; z-index:1}
 .container{max-width:1100px;margin:auto}
 h2{text-align:center;margin:0 0 28px}
-.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));align-items:start}
 
 .reveal-item{
   opacity:0;
@@ -1728,7 +1728,6 @@ body.light .safari-address-bar {
 .safari-content {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/10;
   background: #111;
   overflow: hidden;
 }
@@ -1738,9 +1737,10 @@ body.light .safari-content {
 }
 
 .safari-img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
 
@@ -2160,7 +2160,6 @@ body.light .safari-address-bar {
 .safari-content {
   position: relative;
   width: 100%;
-  aspect-ratio: 16/10;
   background: #111;
   overflow: hidden;
 }
@@ -2170,9 +2169,10 @@ body.light .safari-content {
 }
 
 .safari-img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
   transition: transform 0.5s ease;
 }
 
@@ -2902,6 +2902,7 @@ body.light .service-row__tags li { border-color: rgba(0, 0, 0, 0.14); }
 /* Progetti in lavorazione (senza foto) */
 .project-wip { cursor: default; }
 .wip-content {
+  aspect-ratio: 2 / 1;
   display: flex;
   flex-direction: column;
   align-items: center;
