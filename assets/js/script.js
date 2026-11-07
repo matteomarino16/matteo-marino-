@@ -290,7 +290,7 @@ document.querySelectorAll('[data-store-soon]').forEach((btn) => {
 (() => {
   const WHATSAPP = '393921247095';
   const intro = {
-    demo: 'Ciao Matteo, vorrei richiedere la demo gratuita di un sito web per la mia attività.',
+    demo: 'Ciao Matteo, vorrei richiedere la demo gratuita per la mia attività.',
     progetto: 'Ciao Matteo, vorrei richiedere un progetto.'
   };
 
@@ -309,3 +309,30 @@ document.querySelectorAll('[data-store-soon]').forEach((btn) => {
     });
   });
 })();
+
+// "Richiedi la demo": mostra la scelta del tipo di progetto
+document.querySelectorAll('[data-demo-toggle]').forEach((btn) => {
+  const form = document.getElementById(btn.getAttribute('aria-controls'));
+  if (!form) return;
+  btn.addEventListener('click', () => {
+    const open = form.hidden;
+    form.hidden = !open;
+    btn.setAttribute('aria-expanded', String(open));
+    if (open) form.querySelector('select')?.focus();
+  });
+});
+
+// "Preferisci la mail?": apre la mail con i dati già inseriti nel modulo
+document.querySelectorAll('[data-mail-form]').forEach((link) => {
+  link.addEventListener('click', (e) => {
+    const form = link.closest('form');
+    if (!form) return;
+    const lines = ['Ciao Matteo, vorrei richiedere un progetto.', ''];
+    new FormData(form).forEach((value, key) => {
+      const text = String(value).trim();
+      if (text) lines.push(`${key}: ${text}`);
+    });
+    e.preventDefault();
+    window.location.href = `mailto:info@matteomarino.eu?subject=${encodeURIComponent('Richiesta progetto')}&body=${encodeURIComponent(lines.join('\n'))}`;
+  });
+});

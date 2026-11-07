@@ -78,6 +78,12 @@
     <image:image>
       <image:loc>https://matteomarino.eu/assets/img/app/gestify-analisi.jpg</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>https://matteomarino.eu/assets/img/app/icard-home.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://matteomarino.eu/assets/img/app/icard-dettaglio.jpg</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>https://matteomarino.eu/cookies.html</loc>
@@ -128,6 +134,27 @@
     </image:image>
     <image:image>
       <image:loc>https://matteomarino.eu/assets/img/app/gestify-analisi.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://matteomarino.eu/icard.html</loc>
+    <lastmod>2026-11-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://matteomarino.eu/assets/img/app/icard-icona.png</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://matteomarino.eu/assets/img/app/icard-home.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://matteomarino.eu/assets/img/app/icard-dettaglio.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://matteomarino.eu/assets/img/app/icard-aggiungi.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://matteomarino.eu/assets/img/app/icard-editor.jpg</image:loc>
     </image:image>
   </url>
 </urlset>

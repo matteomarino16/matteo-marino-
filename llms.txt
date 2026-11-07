@@ -49,8 +49,9 @@
 
 - [Finger Roulette](https://matteomarino.eu/finger-roulette.html): gioco multiplayer locale per iPhone. Fino a 6 persone appoggiano un dito sullo schermo, parte il countdown e l'app sceglie qualcuno. Modalità: scelta casuale, eliminazione, al meglio di 3, decisione. Funziona offline, senza permessi. Sviluppata in SwiftUI.
 - [Gestify](https://matteomarino.eu/gestify.html): app per iPhone per la gestione delle finanze personali. Più portafogli, entrate e spese per categoria con filtri, analisi con grafici (7 giorni, mese, trimestre, anno) e confronto con il mese precedente. Sviluppata in SwiftUI.
+- [iCard](https://matteomarino.eu/icard.html): app per iPhone che digitalizza le tessere fedeltà. Scansione con fotocamera, riconoscimento di nome, numero e codice a barre (QR Code, EAN, Code 128 e altri) e aggiunta ad Apple Wallet. Nessun account, i dati restano sul dispositivo. Sviluppata in SwiftUI con design Liquid Glass per iOS 26.
 
-Entrambe le app sono in arrivo su App Store (non ancora pubblicate).
+Tutte e tre le app sono in arrivo su App Store (non ancora pubblicate).
 
 ## Domande frequenti
 
@@ -85,6 +86,7 @@ Puoi scrivere a info@matteomarino.eu, contattarmi su WhatsApp o per telefono al 
 - [Le mie app](https://matteomarino.eu/#app)
 - [Finger Roulette](https://matteomarino.eu/finger-roulette.html)
 - [Gestify](https://matteomarino.eu/gestify.html)
+- [iCard](https://matteomarino.eu/icard.html)
 - [Domande frequenti](https://matteomarino.eu/#faq)
 - [Richiesta progetto e newsletter](https://matteomarino.eu/#contatti)
 - [Cookies Policy](https://matteomarino.eu/cookies.html)

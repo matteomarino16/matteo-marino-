@@ -50,7 +50,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Syne:wght@500..800&display=swap">
-  <link rel="stylesheet" href="assets/css/style.css?v=15" />
+  <link rel="stylesheet" href="assets/css/style.css?v=22" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -582,6 +582,24 @@
       },
       "url": "https://matteomarino.eu/gestify.html",
       "image": "https://matteomarino.eu/assets/img/app/gestify-icona.png"
+    },
+    {
+      "@type": "MobileApplication",
+      "@id": "https://matteomarino.eu/#icard",
+      "name": "iCard",
+      "operatingSystem": "iOS",
+      "applicationCategory": "UtilitiesApplication",
+      "description": "App per iPhone che digitalizza le tessere fedeltà: scansione con fotocamera, riconoscimento di testo e codici a barre e aggiunta ad Apple Wallet. Nessun account, i dati restano sul dispositivo.",
+      "screenshot": [
+        "https://matteomarino.eu/assets/img/app/icard-home.jpg",
+        "https://matteomarino.eu/assets/img/app/icard-dettaglio.jpg"
+      ],
+      "inLanguage": "it",
+      "author": {
+        "@id": "https://matteomarino.eu/#person"
+      },
+      "url": "https://matteomarino.eu/icard.html",
+      "image": "https://matteomarino.eu/assets/img/app/icard-icona.png"
     }
   ]
 }
@@ -645,8 +663,12 @@
 
   <section class="empty-section">
     <div class="sponsor-container">
-      <p class="sponsor-text">Inserisci la tua sponsorizzazione</p>
-      <p class="sponsor-contact">Scrivi a <a href="mailto:info@matteomarino.eu">info@matteomarino.eu</a></p>
+      <p class="sponsor-text">Sponsor</p>
+      <ul class="sponsor-logos">
+        <li><a class="sponsor-logo" href="https://imcsrl.eu" target="_blank" rel="noopener" style="background: #fff;" aria-label="IMC srl" title="IMC srl"><img src="assets/img/sponsor/imc.png" alt="Logo IMC srl" width="256" height="256" loading="lazy"></a></li>
+        <li><a class="sponsor-logo" href="https://ladimoradinonnadora.it" target="_blank" rel="noopener" aria-label="La Dimora di Nonna Dora" title="La Dimora di Nonna Dora"><img src="assets/img/sponsor/ladimora.png" alt="Logo La Dimora di Nonna Dora" width="256" height="256" loading="lazy"></a></li>
+      </ul>
+      <p class="sponsor-contact">Vuoi comparire qui? Scrivi a <a href="mailto:info@matteomarino.eu">info@matteomarino.eu</a></p>
     </div>
   </section>
 
@@ -1084,11 +1106,36 @@
           </div>
         </a>
       </div>
-      <div class="wa-cta-wrap">
-        <a class="wa-cta" href="https://wa.me/393921247095?text=Ciao%20Matteo%2C%20ho%20visto%20i%20tuoi%20progetti%20sul%20sito%20e%20vorrei%20richiedere%20un%20preventivo%20per%20il%20mio%20sito%20web." target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          <span>Richiedi il tuo progetto</span>
-        </a>
+    </div>
+  </section>
+
+  <section class="demo-section" aria-label="Demo gratuita">
+    <div class="container">
+      <div class="demo-box" id="demo">
+        <h2 class="section-title">RICHIEDI LA TUA DEMO GRATUITA</h2>
+        <p class="demo-lead">Ti preparo un'anteprima gratuita del sito web per la tua attività, così vedi come potrebbe essere prima di decidere.</p>
+        <ul class="demo-points">
+          <li>Gratuita e senza impegno</li>
+          <li>Pensata su misura per la tua attività</li>
+          <li>Nessun costo nascosto</li>
+        </ul>
+        <div class="demo-actions">
+          <button type="button" class="more-btn" data-demo-toggle aria-expanded="false" aria-controls="demoForm">Richiedi la demo <span aria-hidden="true">→</span></button>
+        </div>
+        <form class="demo-form" id="demoForm" data-whatsapp-form="demo" hidden>
+          <label class="demo-form__label" for="demoTipo">Che tipo di progetto ti serve?</label>
+          <select id="demoTipo" name="Tipo di progetto" required class="contact-input select-input">
+            <option value="" disabled selected>Scegli il tipo di progetto*</option>
+            <option value="Sito Web Vetrina">Sito Web Vetrina</option>
+            <option value="Landing Page">Landing Page</option>
+            <option value="E-commerce">E-commerce</option>
+            <option value="App Mobile">App Mobile</option>
+            <option value="Altro">Altro</option>
+          </select>
+          <button type="submit" class="wa-cta wa-cta--full">
+            <span>Invia</span>
+          </button>
+        </form>
       </div>
     </div>
   </section>
@@ -1157,6 +1204,37 @@
         <div class="app-phones">
           <figure class="app-phone"><img src="assets/img/app/gestify-home.jpg" alt="Schermata home dell'app Gestify con saldo totale e portafogli" width="603" height="1311" loading="lazy"></figure>
           <figure class="app-phone"><img src="assets/img/app/gestify-analisi.jpg" alt="Gestify: analisi delle spese per categoria con grafico a ciambella" width="603" height="1311" loading="lazy"></figure>
+        </div>
+      </article>
+
+      <article class="app-showcase">
+        <div class="app-info">
+          <div class="app-head">
+            <img class="app-icon" src="assets/img/app/icard-icona.png" alt="Icona dell'app iCard" width="64" height="64" loading="lazy">
+            <div>
+              <h3 class="app-name">iCard</h3>
+              <p class="app-category">Utility · iPhone</p>
+            </div>
+          </div>
+          <p class="app-desc">Digitalizza le tue tessere fedeltà in pochi secondi: le fotografi, iCard legge nome, numero e codice a barre e le aggiunge ad Apple Wallet.</p>
+          <ul class="app-features">
+            <li>Scansione con fotocamera e raddrizzamento automatico</li>
+            <li>Riconosce QR Code, EAN, Code 128 e altri codici</li>
+            <li>Aggiunta ad Apple Wallet con un tocco</li>
+            <li>Nessun account: tutto resta sul tuo iPhone</li>
+          </ul>
+          <div class="app-actions">
+          <button type="button" class="store-btn" data-store-soon aria-label="Download now su App Store">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
+            <span class="store-btn__text"><span class="store-btn__small">Download now</span><span class="store-btn__big">App Store</span></span>
+            <span class="store-btn__soon" aria-live="polite">Prossimamente</span>
+          </button>
+          <a class="more-btn" href="icard.html">Scopri di più <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+        <div class="app-phones">
+          <figure class="app-phone"><img src="assets/img/app/icard-home.jpg" alt="Schermata home dell'app iCard con le tessere fedeltà" width="603" height="1310" loading="lazy"></figure>
+          <figure class="app-phone"><img src="assets/img/app/icard-dettaglio.jpg" alt="iCard: tessera con codice a barre e pulsante Aggiungi a Wallet" width="603" height="1310" loading="lazy"></figure>
         </div>
       </article>
       <div class="wa-cta-wrap">
@@ -1228,38 +1306,6 @@
     </div>
   </section>
 
-  <section class="faq-section" id="faq" aria-labelledby="faqTitle">
-    <div class="container">
-      <h2 class="section-title" id="faqTitle">DOMANDE FREQUENTI</h2>
-      <div class="faq-list">
-        <details class="faq-item">
-          <summary>Chi è Matteo Marino?</summary>
-          <p>Matteo Marino è un web designer e sviluppatore web italiano. Progetta e realizza siti vetrina, landing page, e-commerce e app mobile per aziende e professionisti, curando design, sviluppo e SEO.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Quali servizi offri?</summary>
-          <p>Realizzo siti web vetrina, landing page per campagne marketing, e-commerce, app mobile per iOS e Android e ottimizzazione SEO, inclusa l&#x27;ottimizzazione per i motori di ricerca basati sull&#x27;intelligenza artificiale.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Lavori in tutta Italia?</summary>
-          <p>Sì. Lavoro da remoto con clienti in tutta Italia: progettazione, revisioni e consegna si gestiscono online, via email, WhatsApp o telefono.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Quanto costa un sito web?</summary>
-          <p>Il costo dipende dal tipo di progetto, dal numero di pagine e dalle funzionalità richieste. Compila il modulo di richiesta progetto o scrivi a info@matteomarino.eu per ricevere un preventivo su misura.</p>
-        </details>
-        <details class="faq-item">
-          <summary>I siti che realizzi sono ottimizzati per smartphone e per Google?</summary>
-          <p>Sì. Ogni sito è progettato per funzionare su tutti i dispositivi ed è impostato fin dall&#x27;inizio per la SEO: struttura dei contenuti, velocità, dati strutturati e meta tag.</p>
-        </details>
-        <details class="faq-item">
-          <summary>Come posso contattarti?</summary>
-          <p>Puoi scrivere a info@matteomarino.eu, contattarmi su WhatsApp o per telefono al +39 392 124 7095, oppure compilare il modulo di richiesta progetto su questo sito.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
   <section class="request-section" id="contatti">
     <div class="container">
       <div class="request-button-container">
@@ -1270,16 +1316,6 @@
             <input class="button--submit" value="ISCRIVITI" type="submit"> 
           </div>
         </form>
-      </div>
-
-      <div class="demo-box" id="demo">
-        <h2 class="section-title">RICHIEDI LA TUA DEMO GRATUITA</h2>
-        <p class="demo-lead">Ti preparo un'anteprima gratuita del sito web per la tua attività, così vedi come potrebbe essere prima di decidere.</p>
-        <ul class="demo-points">
-          <li>Gratuita e senza impegno</li>
-          <li>Pensata su misura per la tua attività</li>
-          <li>Richiedila con il modulo qui sotto</li>
-        </ul>
       </div>
 
       <div class="contact-box-container">
@@ -1322,11 +1358,43 @@
 
           <div class="form-submit">
             <button type="submit" class="wa-cta wa-cta--full">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-              <span>Invia la richiesta su WhatsApp</span>
+              <span>Invia la richiesta</span>
             </button>
+            <p class="form-alt">Preferisci la mail? <a href="mailto:info@matteomarino.eu?subject=Richiesta%20progetto" data-mail-form>Clicca qui</a></p>
           </div>
         </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq" aria-labelledby="faqTitle">
+    <div class="container">
+      <h2 class="section-title" id="faqTitle">DOMANDE FREQUENTI</h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Chi è Matteo Marino?</summary>
+          <p>Matteo Marino è un web designer e sviluppatore web italiano. Progetta e realizza siti vetrina, landing page, e-commerce e app mobile per aziende e professionisti, curando design, sviluppo e SEO.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Quali servizi offri?</summary>
+          <p>Realizzo siti web vetrina, landing page per campagne marketing, e-commerce, app mobile per iOS e Android e ottimizzazione SEO, inclusa l&#x27;ottimizzazione per i motori di ricerca basati sull&#x27;intelligenza artificiale.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Lavori in tutta Italia?</summary>
+          <p>Sì. Lavoro da remoto con clienti in tutta Italia: progettazione, revisioni e consegna si gestiscono online, via email, WhatsApp o telefono.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Quanto costa un sito web?</summary>
+          <p>Il costo dipende dal tipo di progetto, dal numero di pagine e dalle funzionalità richieste. Compila il modulo di richiesta progetto o scrivi a info@matteomarino.eu per ricevere un preventivo su misura.</p>
+        </details>
+        <details class="faq-item">
+          <summary>I siti che realizzi sono ottimizzati per smartphone e per Google?</summary>
+          <p>Sì. Ogni sito è progettato per funzionare su tutti i dispositivi ed è impostato fin dall&#x27;inizio per la SEO: struttura dei contenuti, velocità, dati strutturati e meta tag.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Come posso contattarti?</summary>
+          <p>Puoi scrivere a info@matteomarino.eu, contattarmi su WhatsApp o per telefono al +39 392 124 7095, oppure compilare il modulo di richiesta progetto su questo sito.</p>
+        </details>
       </div>
     </div>
   </section>
@@ -1345,7 +1413,7 @@
     </svg>
   </a>
 
-  <script src="assets/js/script.js?v=6"></script>
+  <script src="assets/js/script.js?v=9"></script>
   <!-- effetto elettrico (bundle locale: funziona anche aprendo il file con doppio clic) -->
   <script src="assets/js/electric-logo.bundle.js?v=1"></script>
   <script>

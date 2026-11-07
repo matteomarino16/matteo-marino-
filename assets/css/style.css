@@ -866,8 +866,44 @@ body.light .hero h1{ text-shadow: 0 0 10px rgba(255,255,255,0.25); }
   margin-bottom: 10px;
 }
 
+.sponsor-logos {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.sponsor-logo {
+  display: block;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.sponsor-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sponsor-logo:hover,
+.sponsor-logo:focus-visible {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.35);
+}
+
+body.light .sponsor-logo { border-color: rgba(0,0,0,0.1); }
+
 .sponsor-contact {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+  opacity: 0.8;
 }
 
 .sponsor-contact a {
@@ -1157,6 +1193,7 @@ body.dark .service-icon {
 
 .request-button-container {
   margin-bottom: 80px;
+  padding: 0 20px;
 }
 
 .contact-box-container {
@@ -1271,8 +1308,9 @@ body.light .button--submit-full {
 .input { 
   min-height: 50px; 
   flex: 1;
+  min-width: 0;
   padding: 0 1rem; 
-  font-size: 1.2rem; 
+  font-size: 1rem; 
   font-family: var(--font-body);
   border-radius: 8px 0 0 8px; 
   background-color: transparent; 
@@ -1289,12 +1327,13 @@ body.light .input {
 }
 
 .button--submit { 
+  flex: 0 0 auto;
   min-height: 50px;
-  min-width: 120px;
-  padding: .5em 1em; 
+  padding: 0 1.2rem; 
   border: none; 
   border-radius: 0 8px 8px 0; 
-  font-size: 1.5rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
   font-family: var(--font-body);
   font-weight: 400;
   cursor: pointer; 
@@ -2511,6 +2550,8 @@ body.light .store-btn {
   font-family: var(--font-body);
   font-size: 1rem;
   font-weight: 500;
+  background: transparent;
+  cursor: pointer;
   transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -2747,6 +2788,23 @@ body.light .app-cta {
 
 .wa-cta--full { width: 100%; }
 
+/* Pulsanti dei moduli: inviano su WhatsApp ma senza il verde del marchio */
+form .wa-cta:hover {
+  background: var(--page-fg);
+  color: var(--page-bg);
+  opacity: 0.88;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.form-alt {
+  margin: 12px 0 0;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+.form-alt a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
 /* SEZIONE DEMO GRATUITA */
 .demo-box {
   max-width: 760px;
@@ -2793,6 +2851,23 @@ body.light .demo-box {
 }
 
 body.light .demo-points li { border-color: rgba(0, 0, 0, 0.16); }
+
+.demo-section { padding: 0 20px; position: relative; z-index: 1; }
+.demo-box { text-align: center; }
+.demo-actions { display: flex; justify-content: center; margin-top: 22px; }
+.demo-form {
+  display: grid;
+  gap: 12px;
+  max-width: 420px;
+  margin: 20px auto 0;
+  text-align: left;
+}
+.demo-form[hidden] { display: none; }
+.demo-form__label {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
 
 @media (max-width: 600px) {
   .demo-box { margin: 40px 16px 56px; padding: 30px 16px; }
