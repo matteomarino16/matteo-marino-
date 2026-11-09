@@ -21,6 +21,7 @@
 - [Landing Page](https://matteomarino.eu/#servizi): pagine singole ad alto tasso di conversione per campagne marketing.
 - [E-commerce](https://matteomarino.eu/#servizi): soluzioni complete per la vendita online, sicure e facili da gestire.
 - [App Mobile](https://matteomarino.eu/#servizi): applicazioni native e cross-platform per iOS e Android.
+- [Gestionali su misura](https://matteomarino.eu/#servizi): gestionali personalizzati per piccole e medie aziende (clienti, ordini, magazzino, appuntamenti), costruiti sui processi dell'azienda.
 - [SEO](https://matteomarino.eu/#servizi): ottimizzazione per i motori di ricerca e per le risposte dei motori AI.
 
 ## Portfolio (siti realizzati)
@@ -43,7 +44,6 @@
 - [IMC srl](https://imcsrl.eu)
 - [MCA Design](https://mca-design.it)
 - [SFM Distribuzioni – Vini d'eccellenza](https://sfmdistribuzioni.com)
-- [DS Society](https://dssociety.it)
 
 ## App per iPhone (sviluppate da Matteo Marino)
 
@@ -61,7 +61,7 @@ Matteo Marino è un web designer e sviluppatore web italiano. Progetta e realizz
 
 ### Quali servizi offri?
 
-Realizzo siti web vetrina, landing page per campagne marketing, e-commerce, app mobile per iOS e Android e ottimizzazione SEO, inclusa l'ottimizzazione per i motori di ricerca basati sull'intelligenza artificiale.
+Realizzo siti web vetrina, landing page per campagne marketing, e-commerce, app mobile per iOS e Android, gestionali personalizzati su misura per piccole e medie aziende e ottimizzazione SEO, inclusa l'ottimizzazione per i motori di ricerca basati sull'intelligenza artificiale.
 
 ### Lavori in tutta Italia?
 
